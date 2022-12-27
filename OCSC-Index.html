@@ -3,12 +3,43 @@
 <head> 
     <title> OCSC IDC </title>
     <style>
-        h2 {font-family: arial, Helvetica, sans-serif; color: green }
+        h1 {font-family: arial, Helvetica, sans-serif; color: green }
+      
+
+.bg-image {
+  background-image: url("welcome.jpeg");
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-text {
+  color: black;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
     </style>
 </head>
 
-<h2 > OCSC IDC Welcomes You All </h2>
+<img src="welcome.jpeg" >
 
-<img src="welcome.jpeg" > 
+<body> 
+    <div class="bg-image"></div>
 
+<div class="bg-text">
+    <marquee direction="left">
+  <h1 style="font-size:150px">Wish you a very happy new year 2023!!!</h1></marquee>
+</div>
+
+</body>
 </html>
